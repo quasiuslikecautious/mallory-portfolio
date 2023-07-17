@@ -1,0 +1,22 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 255 255 255;
+    --color-secondary: 243 244 246;
+    --color-inverted: 255 255 255;
+    --color-text-primary: 0 0 0;
+    --color-text-secondary: 107 114 128;
+  }
+
+  :root[class="dark"] {
+    --color-primary: 23 23 23;
+    --color-secondary: 38 38 38;
+    --color-inverted: 23 23 23;
+    --color-text-primary: 255 255 255;
+    --color-text-secondary: 209 213 219;
+  }
+}
