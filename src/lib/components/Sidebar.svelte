@@ -1,4 +1,5 @@
 <script>
+  import { base } from '$app/paths';
   import Fa from 'svelte-fa';
 
   import { faDownload } from '@fortawesome/free-solid-svg-icons';
@@ -19,7 +20,7 @@
     absolute -top-24 h-48 w-48
   ">
     <img 
-      src="/headshot.jpg"
+      src="{base}/headshot.jpg"
       alt="Mallory Ellis"
       class="rounded-xl"
     >
@@ -49,7 +50,7 @@
   <ContactList />
 
   <a
-    href="/resume.pdf"
+    href="{base}/resume.pdf"
     download="Mallory_Ellis_Resume.pdf"
     class="
       flex flex-row justify-center items-center space-x-2

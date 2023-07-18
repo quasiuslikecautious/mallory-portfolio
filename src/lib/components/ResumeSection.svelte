@@ -1,4 +1,5 @@
 <script>
+  import { base } from '$app/paths';
   import SectionHeading from '$lib/components/SectionHeading.svelte';
 </script>
 
@@ -19,7 +20,7 @@
   </div>
 
   <img
-    src="/resume.png"
+    src="{base}/resume.png"
     alt="Mallory Ellis Resume"
   >
 </div>
