@@ -32,6 +32,6 @@
 
   
   <footer class="mt-4 text-text">
-    © Mallory Ellis 2023
+
   </footer>
 </div>

@@ -41,9 +41,9 @@
       md:w-20 md:h-20
 
       {$activeTab == section ? 
-        "bg-gradient-to-r from-blue-500 to-violet-500 text-white"
+        "bg-gradient-to-r from-teal-500 to-indigo-500 text-white"
         :
-        "bg-secondary text-text hover:bg-gradient-to-r hover:from-blue-100 hover:to-violet-100"
+        "bg-secondary text-text hover:bg-gradient-to-r hover:from-teal-100 hover:to-indigo-100"
       }
     "
   >

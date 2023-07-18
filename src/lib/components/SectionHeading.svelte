@@ -11,7 +11,7 @@
     <slot />
   </h1>
   <hr class="
-    bg-gradient-to-r from-blue-500 to-violet-500
+    bg-gradient-to-r from-teal-500 to-indigo-500
     h-1 w-64 mx-0 my-auto
 
     md:ml-6

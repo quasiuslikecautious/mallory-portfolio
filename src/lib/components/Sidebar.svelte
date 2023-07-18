@@ -53,9 +53,9 @@
     download="Mallory_Ellis_Resume.pdf"
     class="
       flex flex-row justify-center items-center space-x-2
-      rounded-full bg-gradient-to-l from-blue-500 to-violet-500
+      rounded-full bg-gradient-to-l from-teal-500 to-indigo-500
       px-6 py-4
-      text-white 
+      text-white
     ">
     <Fa icon={faDownload} />
     <p>Download CV</p>
