@@ -3,6 +3,7 @@ import { createNoise3D } from "simplex-noise";
 
 let canvas;
 let ctx;
+let darkMode;
 let screenWidth;
 let screenHeight;
 let centerX;
@@ -26,7 +27,7 @@ const Configs = {
 };
 
 // Initialize
-function initializeCanvas(darkMode = false) {
+function initializeCanvas(isDarkMode = false) {
   canvas = document.querySelector('canvas');
   ctx = canvas.getContext('2d');
   canvas.width = window.innerWidth;
@@ -42,6 +43,8 @@ function initializeCanvas(darkMode = false) {
   }
 
   simplexNoise = new createNoise3D();
+
+  darkMode = isDarkMode;
 
   ctx.fillStyle = darkMode ? Configs.dark : Configs.light;
   ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -59,6 +62,8 @@ function onWindowResize(e) {
 
   ctx = canvas.getContext('2d');
   ctx.lineCap = ctx.lineJoin = 'round';
+
+  ctx.fillStyle = darkMode ? Configs.dark : Configs.light;
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 }
 
