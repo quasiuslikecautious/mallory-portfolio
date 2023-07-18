@@ -59,7 +59,7 @@
       text-white
     ">
     <Fa icon={faDownload} />
-    <p>Download CV</p>
+    <p>Download Resume</p>
   </a>
 
 </div>
