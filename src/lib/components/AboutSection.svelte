@@ -1,6 +1,6 @@
 <script>
-  import SkillCardList from '$lib/components/SkillCardList.svelte';
   import SectionHeading from '$lib/components/SectionHeading.svelte';
+  import SkillCardList from '$lib/components/SkillCardList.svelte';
 </script>
 
 <div id="about-section">

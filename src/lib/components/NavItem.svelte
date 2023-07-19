@@ -30,7 +30,7 @@
     data-tabs-target={sectionLink}
     type="button"
     role="tab"
-    aria-controls="profile"
+    aria-controls="navigation-tab"
     aria-selected={$activeTab == section}
     on:click={setActiveTab}
     class="

@@ -1,5 +1,6 @@
 <script>
   import SectionHeading from '$lib/components/SectionHeading.svelte';
+  import PortfolioCardList from '$lib/components/PortfolioCardList.svelte';
 </script>
 
 <div id="portfolio-section">
@@ -17,5 +18,7 @@
       Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
     </p>
   </div>
+
+  <PortfolioCardList />
 
 </div>
