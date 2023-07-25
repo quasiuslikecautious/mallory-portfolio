@@ -20,7 +20,7 @@ const config = {
     }
 	},
 
-	plugins: []
+	plugins: [],
 };
 
 module.exports = config;

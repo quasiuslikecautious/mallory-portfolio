@@ -16,45 +16,39 @@
   }
 </script>
 
-<li 
-  role="presentation"
+<button 
+  id={tabId}
+  data-tabs-target={sectionLink}
+  type="button"
+  role="tab"
+  aria-controls="navigation-tab"
+  aria-selected={$activeTab == section}
+  on:click={setActiveTab}
   class="
-    w-full
+    flex flex-col items-center justify-center space-y-2
+    bg-secondary
+    w-full h-10
+    text-text 
+
+    md:rounded-lg
+    md:w-20 md:h-20
+
+    hover:bg-gradient-to-r hover:from-teal-100 hover:to-indigo-100
 
     first:rounded-l-lg
-    last:rounded-r-rg
+    last:rounded-r-lg
+
+    aria-selected:bg-gradient-to-r aria-selected:from-teal-500 aria-selected:to-indigo-500
+    aria-selected:text-white
   "
 >
-  <button 
-    id={tabId}
-    data-tabs-target={sectionLink}
-    type="button"
-    role="tab"
-    aria-controls="navigation-tab"
-    aria-selected={$activeTab == section}
-    on:click={setActiveTab}
-    class="
-      flex flex-col items-center justify-center space-y-2
-      w-full h-10
+  <Fa icon={faIcon} size="lg" />
+  <span class="
+    hidden
+    font-medium
 
-      md:rounded-lg
-      md:w-20 md:h-20
-
-      {$activeTab == section ? 
-        "bg-gradient-to-r from-teal-500 to-indigo-500 text-white"
-        :
-        "bg-secondary text-text hover:bg-gradient-to-r hover:from-teal-100 hover:to-indigo-100"
-      }
-    "
-  >
-    <Fa icon={faIcon} size="lg" />
-    <span class="
-      hidden
-      font-medium
-
-      md:flex md:visible
-    ">
-      {displayText}
-    </span>
-  </button>
-</li>
+    md:flex md:visible
+  ">
+    {displayText}
+  </span>
+</button>

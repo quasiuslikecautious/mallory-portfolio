@@ -15,11 +15,12 @@
     role="tablist"
     class="
       flex flex-row flex-nowrap space-x-0 justify-around
-      px-4 py-2
       text-sm font-medium text-center
 
       md:items-end md:space-x-6
       md:px-8 md:py-6
+
+      first:rounded-l-lg
     "
   >
     {#each routes as route, i}
