@@ -25,6 +25,7 @@
     rounded-full border border-solid bg-inverted
     p-4 
   "
+  aria-label="Dark mode toggle"
   on:click={toggleDark}
 >
   {#if darkMode}
