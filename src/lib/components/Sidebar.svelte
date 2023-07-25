@@ -19,11 +19,13 @@
     shadow rounded-xl bg-black
     absolute -top-24 h-48 w-48
   ">
-    <img 
+    <img
       src="{base}/headshot.jpg"
       alt="Mallory Ellis"
       class="rounded-xl"
-    >
+      height="192px"
+      width="192px"
+    />
   </div>
 
   <div id="spacer" class="h-16" />

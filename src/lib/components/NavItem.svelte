@@ -33,10 +33,10 @@
     md:rounded-lg
     md:w-20 md:h-20
 
-    hover:bg-gradient-to-r hover:from-teal-100 hover:to-indigo-100
-
     first:rounded-l-lg
     last:rounded-r-lg
+
+    hover:bg-gradient-to-r hover:from-teal-100 hover:to-indigo-100
 
     aria-selected:bg-gradient-to-r aria-selected:from-teal-500 aria-selected:to-indigo-500
     aria-selected:text-white
