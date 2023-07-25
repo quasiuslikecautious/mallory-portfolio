@@ -1,6 +1,6 @@
 <script>
-  import Sidebar from '$lib/components/Sidebar.svelte';
+  import DigitalCard from '$lib/components/DigitalCard.svelte';
 </script>
 
-<Sidebar />
+<DigitalCard />
 

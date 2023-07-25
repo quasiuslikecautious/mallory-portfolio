@@ -1,6 +1,6 @@
 <script>
   import ContactItem from './ContactItem.svelte';
-  import contact_methods from '$lib/ContactMethods.ts'
+  import contact_methods from '$lib/DigitalCardMethods.ts'
 </script>
 
 <div class="
