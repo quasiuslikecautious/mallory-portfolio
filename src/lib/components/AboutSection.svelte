@@ -20,8 +20,11 @@
   </div>
 
   <h2 class="
+    text-center
     mb-4
     text-3xl text-text font-bold font-serif
+
+    lg:text-left
   ">
     What I do!
   </h2>

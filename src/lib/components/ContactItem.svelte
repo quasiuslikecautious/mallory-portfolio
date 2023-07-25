@@ -5,19 +5,10 @@
   export let color;
   export let faIcon;
   export let faIconColor;
-  export let excludePaths = [];
 
-  import Fa from 'svelte-fa';
-  import { onMount } from 'svelte';
-
-  let path = '';
-
-  onMount(() => {
-    path = window.location.pathname;
-  });
+  import Fa from 'svelte-fa'
 </script>
 
-{#if !excludePaths.includes(path)}
 {#if link == ''}
   <div
     class="
@@ -85,5 +76,4 @@
       </p>
     </div>
   </a>
-{/if}
 {/if}
