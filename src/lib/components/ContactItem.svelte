@@ -30,11 +30,11 @@
   <div class="
     flex flex-col justify-center items-start
   ">
-    <h6 class="
+    <h3 class="
       text-xs text-text
     ">
       {name}
-    </h6>
+    </h3>
     <p
       class="
         text-text whitespace-nowrap {link != '' ? "underline" : ""}

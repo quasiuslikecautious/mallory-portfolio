@@ -22,6 +22,7 @@
   type="button"
   role="tab"
   aria-controls="navigation-tab"
+  aria-label={section}
   aria-selected={$activeTab == section}
   on:click={setActiveTab}
   class="

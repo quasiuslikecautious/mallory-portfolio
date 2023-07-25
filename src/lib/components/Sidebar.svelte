@@ -46,6 +46,7 @@
   <SocialIcon
     faIcon={faLinkedinIn}
     faIconColor=dodgerblue
+    ariaLabel="Check out my LinkedIn!"
     link="https://www.linkedin.com/in/mallory-ellis"
   />
 
@@ -53,6 +54,7 @@
 
   <a
     href="{base}/resume.pdf"
+    aria-label="Check out my resume!"
     download="Mallory_Ellis_Resume.pdf"
     class="
       flex flex-row justify-center items-center space-x-2
