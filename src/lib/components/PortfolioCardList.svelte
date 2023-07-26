@@ -13,6 +13,7 @@
       faIcon={work.faIcon}
       faIconColor={work.faIconColor}
       responsibilities={work.responsibilities}
+      samples={work.samples}
     />
   {/each}
 </div>

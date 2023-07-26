@@ -3,13 +3,16 @@
   export let faIcon;
   export let faIconColor;
   export let responsibilities;
+  export let samples;
 
   import Fa from 'svelte-fa';
 
   import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
-  import { faCircleCheck } from '@fortawesome/free-regular-svg-icons';
 
   import { activePortfolioTab } from '$lib/Stores.ts';
+
+  import ResponsibilitiesList from '$lib/components/ResponsibilitiesList.svelte';
+  import ImageCarousel from '$lib/components/ImageCarousel.svelte';
 
   const tabName = title.trim().toLowerCase().split(' ').join('_');
 
@@ -26,17 +29,21 @@
   }
 </script>
 
-<div class="
-  flex flex-col items-center content-center
-  container shadow bg-secondary rounded-lg
-  mb-8 w-full 
+<div 
+  aria-controls={tabName}
+  aria-selected={$activePortfolioTab == tabName}
+  class="
+    flex flex-col items-center content-center
+    container shadow bg-secondary rounded-lg
+    mb-8 w-full 
 
-  dark:border dark:border-solid
+    dark:border dark:border-solid
 
-  md:space-y-4
-  md:rounded-lg
-  md:p-2
-">
+    md:space-y-4
+    md:rounded-lg
+    md:p-2
+  "
+>
   <button
     aria-controls="portfolio-tab"
     on:click={expandSection}
@@ -70,6 +77,7 @@
   </button>
 
   <div class="
+    flex flex-col space-y-4
     container bg-primary
     p-4 w-full
 
@@ -77,27 +85,8 @@
 
     {$activePortfolioTab == tabName ? '' : 'hidden'}
   ">
-    <ul class="
-      flex flex-col justify-left items-start space-y-2
-    ">
-      {#each responsibilities as r}
-        <li class="
-          flex flex-row items-center justify-left space-x-2
-          text-text
-        ">
-          <Fa icon={faCircleCheck} size="sm" primaryColor="green"/>
-          <span class="
-            text-sm
-          ">
-            {r.text}
-          </span>
-
-          {#each r.icons as i}
-            <Fa icon={i} size="sm" />
-          {/each}
-        </li>
-      {/each}
-    </ul>
+    <ResponsibilitiesList responsibilities={responsibilities} />
+    <ImageCarousel images={samples} />
   </div>
 
 </div>

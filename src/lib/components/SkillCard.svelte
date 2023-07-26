@@ -12,8 +12,11 @@
   flex flex-row space-x-4 items-begin
   container shadow rounded-lg bg-opacity-50
   p-4 mb-8 mr-2 w-full 
+
   dark:bg-transparent dark:border dark:border-solid
+
   lg:w-72
+
   {color}
 ">
   <div>

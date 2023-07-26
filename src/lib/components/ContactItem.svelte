@@ -15,7 +15,7 @@
       flex flex-row space-x-4
       container shadow rounded-lg {color}
       mr-8 p-2
-  
+
       dark:bg-transparent dark:border dark:border-solid dark:border-white
     "
   >
@@ -35,7 +35,7 @@
       </h3>
       <p
         class="
-          text-text whitespace-nowrap
+          text-text whitespace-nowrap  
         "
       >
         {value}
@@ -70,6 +70,9 @@
       <p
         class="
           text-text whitespace-nowrap underline
+          transition-color delay-50 duration-300
+
+          hover:text-teal-500
         "
       >
         {value}

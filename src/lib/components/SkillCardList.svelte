@@ -4,7 +4,7 @@
 </script>
 
 <div class="
-  flex flex-row flex-wrap justify-around
+  flex flex-row flex-wrap justify-between
 ">
   {#each skills as skill}
     <SkillCard
