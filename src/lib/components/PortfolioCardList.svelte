@@ -12,7 +12,7 @@
       title={work.title}
       faIcon={work.faIcon}
       faIconColor={work.faIconColor}
-      text={work.text}
+      responsibilities={work.responsibilities}
     />
   {/each}
 </div>

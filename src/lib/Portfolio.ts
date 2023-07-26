@@ -1,11 +1,79 @@
 import { faBuildingShield, faFire, faGears, faHouseLaptop, faTooth } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const works = [
-  { title: 'The Hose Monster Company', faIcon: faFire, faIconColor: 'orange', text: 'Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.' },
-  { title: 'Inspire Automation',  faIcon: faGears, faIconColor: 'teal', text: 'Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.' },
-  { title: 'SafeCare', faIcon: faBuildingShield, faIconColor: 'navy', text: 'Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.' },
-  { title: 'LifeWorking', faIcon: faHouseLaptop, faIconColor: 'mediumblue', text: 'Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.' },
-  { title: 'Renfert USA', faIcon: faTooth, faIconColor: 'firebrick', text: 'Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.' },
+  { 
+    title: 'The Hose Monster Company', 
+    faIcon: faFire, 
+    faIconColor: 'orange', 
+    responsibilities: [
+      { text: 'Organic social', icons: [ faFacebook, faInstagram, faLinkedin ] },
+      { text: 'Google Ads', icons: [] },
+      { text: 'Paid ads', icons: [ faFacebook, faLinkedin ] },
+      { text: 'Print and digital publication ads', icons: [] },
+      { text: 'Email marketing', icons: [] },
+      { text: 'Website updates', icons: [] },
+      { text: 'Campaign strategy', icons: [] },
+      { text: 'Photo shoots', icons: [] }
+    ]
+  },
+
+  {
+    title: 'Inspire Automation',
+    faIcon: faGears,
+    faIconColor: 'teal',
+    responsibilities: [
+      { text: 'Organic social', icons: [faLinkedin] },
+      { text: 'Email marketing', icons: [] },
+      { text: 'Blogs', icons: [] },
+      { text: 'Case studies', icons: [] },
+      { text: 'Website updates', icons: [] },
+      { text: 'Recruitment and retention strategy', icons: [] },
+      { text: 'Templates for publications', icons: [] },
+      { text: 'Video', icons: [] },
+      { text: 'Tradeshow marketing', icons: [] }
+    ]
+  },
+
+  {
+    title: 'SafeCare',
+    faIcon: faBuildingShield,
+    faIconColor: 'navy',
+    responsibilities: [
+      { text: 'Organic social', icons: [faFacebook, faLinkedin] },
+      { text: 'Email marketing', icons: [] },
+      { text: 'Paid ads', icons: [faFacebook, faLinkedin] },
+      { text: 'Print and digital publication ads', icons: [] },
+      { text: 'Blogs', icons: [] },
+      { text: 'Recruitment and retention strategy', icons: [] }
+    ]
+  },
+
+  {
+    title: 'LifeWorking',
+    faIcon: faHouseLaptop,
+    faIconColor: 'mediumblue',
+    responsibilities: [
+      { text: 'Organic social', icons: [faFacebook, faInstagram, faLinkedin] },
+      { text: 'Blogs', icons: [] },
+      { text: 'E-newsletter creation', icons: [] },
+      { text: 'Business strategy', icons: [] }
+    ]
+  },
+
+  {
+    title: 'Renfert USA',
+    faIcon: faTooth,
+    faIconColor: 'firebrick',
+    responsibilities: [
+      { text: 'Organic social', icons: [faFacebook, faLinkedin] },
+      { text: 'Paid ads', icons: [faFacebook, faLinkedin] },
+      { text: 'Influencer marketing strategy', icons: [] },
+      { text: 'Print and digital publication ads', icons: [] },
+      { text: 'Email marketing', icons: [] },
+      { text: 'Blogs', icons: [] }
+    ]
+  },
 ]
 
 export default works;

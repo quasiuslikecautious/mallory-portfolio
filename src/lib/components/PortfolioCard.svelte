@@ -2,11 +2,12 @@
   export let title;
   export let faIcon;
   export let faIconColor;
-  export let text;
+  export let responsibilities;
 
   import Fa from 'svelte-fa';
 
   import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
+  import { faCircleCheck } from '@fortawesome/free-regular-svg-icons';
 
   import { activePortfolioTab } from '$lib/Stores.ts';
 
@@ -76,11 +77,26 @@
 
     {$activePortfolioTab == tabName ? '' : 'hidden'}
   ">
-    <p class="
-      text-sm text-text leading-7
+    <ul class="
+      flex flex-col justify-left items-start space-y-2
     ">
-      {text}
-    </p>
+      {#each responsibilities as r}
+        <li class="
+          flex flex-row items-center justify-left space-x-2
+        ">
+          <Fa icon={faCircleCheck} size="sm" primaryColor="green"/>
+          <span class="
+            text-sm text-text
+          ">
+            {r.text}
+          </span>
+
+          {#each r.icons as i}
+            <Fa icon={i} size="sm" />
+          {/each}
+        </li>
+      {/each}
+    </ul>
   </div>
 
 </div>

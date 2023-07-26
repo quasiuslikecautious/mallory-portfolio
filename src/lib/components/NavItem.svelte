@@ -38,6 +38,7 @@
     last:rounded-r-lg
 
     hover:bg-gradient-to-r hover:from-teal-100 hover:to-indigo-100
+    hover:bg-opacity-5
 
     aria-selected:bg-gradient-to-r aria-selected:from-teal-500 aria-selected:to-indigo-500
     aria-selected:text-white
