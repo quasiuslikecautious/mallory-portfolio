@@ -83,10 +83,11 @@
       {#each responsibilities as r}
         <li class="
           flex flex-row items-center justify-left space-x-2
+          text-text
         ">
           <Fa icon={faCircleCheck} size="sm" primaryColor="green"/>
           <span class="
-            text-sm text-text
+            text-sm
           ">
             {r.text}
           </span>
