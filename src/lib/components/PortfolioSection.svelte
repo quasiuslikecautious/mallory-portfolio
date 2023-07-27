@@ -20,7 +20,7 @@
     <p class="
       mr-auto mb-2
     ">
-      Check out my previous projects below!
+      Check out my projects below!
     </p>
   </div>
 
