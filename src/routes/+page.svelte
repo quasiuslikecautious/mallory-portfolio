@@ -20,12 +20,14 @@
 <div class="
   flex flex-col items-center space-y-8
   relative
+
   md:flex-row md:items-start md:space-x-8 md:space-y-0
 ">
   <Sidebar />
   
   <div class="
     flex flex-col flex-nowrap items-end space-x-2
+    w-full
   ">
 
     <NavBar />

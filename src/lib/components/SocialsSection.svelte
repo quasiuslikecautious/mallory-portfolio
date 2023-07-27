@@ -14,7 +14,7 @@
     <p class="
       mb-2
     ">
-      Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
+      <!-- TODO -->
     </p>
   </div>
 

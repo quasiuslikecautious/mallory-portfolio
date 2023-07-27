@@ -18,7 +18,9 @@
     ">
       <Fa icon={faCircleCheck} size="xs" primaryColor="green"/>
       <span class="
-        text-sm
+        text-xs
+
+        md:text-sm
       ">
         {r.text}
       </span>

@@ -3,7 +3,12 @@
   import PortfolioCardList from '$lib/components/PortfolioCardList.svelte';
 </script>
 
-<div id="portfolio-section">
+<div 
+  id="portfolio-section"
+  class="
+    w-full
+  "
+>
   <SectionHeading>
     Portfolio
   </SectionHeading>
@@ -13,9 +18,9 @@
     text-secondaryText
   ">
     <p class="
-      mb-2
+      mr-auto mb-2
     ">
-      Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
+      Check out my previous projects below!
     </p>
   </div>
 
